@@ -35,6 +35,10 @@ class SignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        primary:
+            Color.fromARGB(255, 82, 73, 76), // Set the desired button color
+      ),
       onPressed: () async {
         final username = usernameController.text;
         final password = passwordController.text;

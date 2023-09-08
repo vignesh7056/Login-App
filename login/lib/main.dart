@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/components/SignInButton.dart';
+import 'package:login/components/SignUpButton.dart';
 import 'components/my_textfield.dart';
 import 'components/HomePage.dart';
 
@@ -59,7 +60,12 @@ class MyApp extends StatelessWidget {
                           onPressed: () {
                             // Handle forgot password here
                           },
-                          child: Text('Forgot password?'),
+                          child: const Text(
+                            'Forgot password?',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 82, 73, 76),
+                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -87,6 +93,7 @@ class MyApp extends StatelessWidget {
                         }
                       },
                     ),
+                    SignUpButton(context: context),
                   ],
                 );
               },
